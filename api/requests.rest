@@ -1,0 +1,15 @@
+GET http://localhost:3001/todos
+
+###
+
+curl -X POST http://localhost:3001/todo/new 
+-H "Content-Type: application/json" 
+-d '{"text": "hello i am llll"}'
+
+###
+
+DELETE  http://localhost:3001/todo/delete/64fd10c8a460127952731c0b HTTP/1.1
+
+###
+
+curl -X PUT http://localhost:3001/todo/complete/64fd16aabce6c1dc6b2a97f8 -H "Content-Type: application/json" -d '{"text": "hello world"}'
